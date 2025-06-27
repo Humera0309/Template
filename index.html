@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Task</title>
+  <link rel="stylesheet" href="style.css"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+  <style>
+    * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: #fdfbff;
+  color: #333;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 40px;
+  background: #fff;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #333;
+}
+
+.contact-btn {
+  background: #9f5cff;
+  color: #fff;
+  padding: 10px 16px;
+  text-decoration: none;
+  border-radius: 6px;
+}
+
+.hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 60px 40px;
+  flex-wrap: wrap;
+}
+
+.hero-text {
+  max-width: 50%;
+}
+
+.hero-text h1 {
+  font-size: 36px;
+  margin: 20px 0;
+}
+
+.hero-text span {
+  font-weight: bold;
+}
+
+.hero-text p {
+  max-width: 500px;
+  margin-bottom: 20px;
+  color: #555;
+}
+
+.start-btn {
+  background: #9f5cff;
+  color: #fff;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.buttons {
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.btn, .btn-outline {
+  padding: 10px 20px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.btn {
+  background: #9f5cff;
+  color: white;
+}
+
+.btn-outline {
+  border: 2px solid #9f5cff;
+  color: #9f5cff;
+  background: none;
+}
+
+.hero-img {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.hero-img img {
+  width: 500px;       
+  height: 500px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 5px solid #fff;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.1);
+}
+
+
+
+.img-controls {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: white;
+  border-radius: 10px;
+  display: flex;
+  gap: 10px;
+  padding: 6px 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.img-controls i {
+  font-size: 14px;
+  color: #333;
+  cursor: pointer;
+}
+
+.wp-diamond {
+  position: absolute;
+  top: -20px;
+  left: -20px;
+  width: 50px;
+  height: 50px;
+  background-color: #9f5cff;
+  transform: rotate(45deg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.wp-diamond i {
+  color: white;
+  font-size: 22px;
+  transform: rotate(-45deg); 
+}
+
+
+.projects, .explore {
+  position: absolute;
+  background: white;
+  padding: 10px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  width: 140px;
+  text-align: center;
+  font-size: 14px;
+}
+
+.projects {
+  top: 20px;
+  right: -30px;
+}
+
+.explore {
+  bottom: 20px;
+  left: -30px;
+}
+
+.projects i, .explore i {
+  color: #9f5cff;
+  font-size: 20px;
+  margin-bottom: 5px;
+}
+</style>
+</head>
+<body>
+
+  <header class="navbar">
+    <div class="logo">Sahariar.</div>
+    <nav>
+      <ul>
+        <li><a href="#">HOME</a></li>
+        <li><a href="#">ABOUT</a></li>
+        <li><a href="#">SERVICES</a></li>
+        <li><a href="#">EXPERIENCE</a></li>
+        <li><a href="#">WEB DEVELOPMENT</a></li>
+      </ul>
+    </nav>
+    <a href="#" class="contact-btn">Contact us</a>
+  </header>
+
+  <section class="hero">
+    <div class="hero-text">
+      <button class="start-btn">Get Started</button>
+      <h1>Hello, I'm <span>Sahariar Ahmed</span></h1>
+      <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text.</p>
+      <div class="buttons">
+        <a href="#" class="btn">Hire Me</a>
+        <a href="#" class="btn-outline">Hire Me</a>
+      </div>
+    </div>
+
+    <div class="hero-img">
+      <img src="unsplash image.webp" alt="Profile" />
+
+      <div class="img-controls">
+        <i class="fas fa-camera"></i>
+        <i class="fas fa-image"></i>
+        <i class="fas fa-cog"></i>
+      </div>
+
+      <div class="projects">
+        <i class="fas fa-clipboard-check"></i>
+        <p><strong>12K+</strong><br>Completed Projects</p>
+      </div>
+
+      <div class="explore">
+        <i class="fa fa-users"></i>
+        <p><strong>20+</strong><br>Explore</p>
+      </div>
+
+      <div class="wp-diamond">
+         <i class="fab fa-wordpress"></i>
+      </div>
+
+    </div>
+  </section>
+
+</body>
+</html>
